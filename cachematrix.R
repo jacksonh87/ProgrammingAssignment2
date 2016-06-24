@@ -6,6 +6,9 @@
 ## 3. set the value of the inverse
 ## 4. get the value of the inverse
 ##
+## The function is used as follows:
+## makeCacheMatrix(x), where x is a square matrix
+##
 ## Per the assignment instructions it assumes a square matrix is 
 ## supplied, so there is no checking in the function to ensure the
 ## inverse can actually be calculated.
@@ -28,7 +31,7 @@ makeCacheMatrix <- function(x = matrix()) {
   ### 4. get the value of the inverse of the matrix
   getsolve <- function() m
   
-  # return our list
+  ### Returns the list
   list(set = set, get = get,
        setsolve = setsolve,
        getsolve = getsolve)
